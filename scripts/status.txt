@@ -1,0 +1,42 @@
+@"
+=== ExperimentIQ Project Status ===
+Generated: 10/14/2026
+
+### Directory Structure
+app/            - Main application code
+app/structured/ - MLflow API client
+app/unstructured/ - Qdrant client
+app/eval/       - Evaluation module
+scripts/        - Utility scripts
+tests/          - Test directory
+
+### Python Modules
+[✓] app/__init__.py
+[✓] app/router.py
+[✓] app/schemas.py
+[✓] app/pipeline.py
+[✓] app/main.py
+[✓] app/structured/__init__.py
+[✓] app/structured/client.py
+[✓] app/structured/query.py
+[✓] app/unstructured/__init__.py
+[✓] app/unstructured/client.py
+[✓] app/unstructured/retrieve.py
+[✓] app/eval/__init__.py
+[✓] app/eval/benchmark.py
+[✓] app/eval/metrics.py
+
+### Config Files
+[✓] pyproject.toml
+[✓] requirements.txt
+[✓] Dockerfile
+[✓] docker-compose.yml
+[✓] README.md
+
+### Notes
+- mlflow.db: 954 KB - MLflow database already created locally
+- Qdrant: Not running (docker not available)
+- Use mock fallback in unstructured/client.py for local testing
+
+=== End Status ===
+"@

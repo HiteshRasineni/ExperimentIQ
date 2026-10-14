@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# MLflow local state
+mlflow.db*
+mlruns/
+artifacts/
+qdrant_storage/
+
+# Logs / results
+*.log
+results.json
+uvicorn*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env
+.env

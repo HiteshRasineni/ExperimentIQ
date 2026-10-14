@@ -1,0 +1,30 @@
+[project]
+name = "experimentiq"
+version = "0.1.0"
+description = "ExperimentIQ: Query-routing RAG assistant for MLflow experiment tracking"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+
+dependencies = [
+    "fastapi>=0.104.0",
+    "uvicorn[standard]>=0.24.0",
+    "mlflow>=2.10.0",
+    "qdrant-client>=1.8.0",
+    "pydantic>=2.5.0",
+    "pandas>=2.1.0",
+    "pydantic-settings>=2.1.0",
+    "httpx>=0.26.0",
+    "jinja2>=3.1.0",
+]
+
+[project.scripts]
+experimentiq = "app.main:app"
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
